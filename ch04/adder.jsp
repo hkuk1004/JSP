@@ -15,7 +15,7 @@
 	} catch(NumberFormatException e){ %>
 <script type="text/javascript">
 	alert("그게 숫자냐 ?");
-	history.back();
+	history.back(); /* history.go(-1); */
 </script>		
 <%	}
 %>

@@ -6,5 +6,6 @@
 이름 : ${param.name }<p>
 주소 : ${param["addr"] }<p>
 이름 : ${param['name'] }<p>
+주소 : ${param.addr }
 </body>
 </html>

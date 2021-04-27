@@ -7,7 +7,7 @@
 <%
 	Set<String> hobby = new HashSet<>();
 	hobby.add("졸기"); hobby.add("자기"); hobby.add("울기"); 
-	request.setAttribute("hooby", hobby);
+	request.setAttribute("hobby", hobby);
 	RequestDispatcher rd = request.getRequestDispatcher("setResult.jsp");
 	rd.forward(request, response);
 %>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="u" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="t" uri="/WEB-INF/taglibs/tool.tld" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>영화</h2>
-<u:nLine color="red" size="10"/>
+<h2>오늘의 영화</h2>
+<t:nStar color="red" size="20"/>
 배트맨<p>
 아이언맨<p>
-울트라 맨<p>
-<u:nLine color="blue" size="30"/>
+스파이더맨<p>
+<t:nStar color="blue" size="40"/>
 </body>
-</html>
+</html> 

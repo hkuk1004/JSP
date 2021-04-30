@@ -3,13 +3,10 @@
 <%@ taglib prefix="t" uri="/WEB-INF/taglibs/tool.tld" %>
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <title>Insert title here</title></head><body>
-<h2> 공고</h2>
-<t:box>
-	공사중에 성가시게 해서<p>
-	지송해유
-</t:box>
-<t:box>
-	필요한 책을 주문하세요
-</t:box>
+<h2>작은 수 찾기</h2>
+첫번째 수 : ${param.num1 }<p>
+두번째 수 : ${param.num2 }<p>
+<t:nMin var="a" num2="${param.num2 }" num1="${param.num1 }"/>
+작은 값 : ${a }
 </body>
 </html>

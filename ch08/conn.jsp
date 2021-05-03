@@ -3,10 +3,10 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <title>Insert title here</title></head><body>
 <%
-	String driver="com.mysql.cj.jdbc.Driver";
-	String url="jdbc:mysql://127.0.0.1:3306/test?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+	String driver = "oracle.jdbc.driver.OracleDriver";
+	String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
 	Class.forName(driver);
-	Connection conn = DriverManager.getConnection(url, "root","mysql");
+	Connection conn = DriverManager.getConnection(url, "scott","tiger");
 	if (conn != null) out.println("연결 성공");
 	else out.println("연결 실패");
 	conn.close();

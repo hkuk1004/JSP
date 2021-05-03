@@ -17,7 +17,7 @@
 	Connection conn = DriverManager.getConnection(url,"scott","tiger");
 	Statement stmt = conn.createStatement();
 	ResultSet rs = stmt.executeQuery(sql);
-	rs.next();
+	rs.next(); // rs 에서 첫 번째 데이터를 읽는다
 	Dept dept = new Dept();
 	dept.setDeptno(deptno);
 	dept.setDname(rs.getString("dname"));

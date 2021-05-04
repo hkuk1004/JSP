@@ -32,8 +32,12 @@ public class MemberDao {
 		PreparedStatement pstmt = null;
 		String sql = "insert into member1 values(?,?,?,sysdate)";
 		try {
-			
-		} catch (Exception e) {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, member.getId());
+			pstmt.setString(2, member.getPassword());
+			pstmt.setString(3, member.getName());
+			result = pstmt.executeUpdate();
+		} catch (Exception e) {      
 			System.out.println(e.getMessage());
 		}finally {
 			try {

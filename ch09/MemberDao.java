@@ -26,4 +26,9 @@ public class MemberDao {
 		}
 		return conn;
 	}
+	public int insert(Member member) {
+		int result = 0;
+		return result;
+	}
 }
+

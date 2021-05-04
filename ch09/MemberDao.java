@@ -28,6 +28,19 @@ public class MemberDao {
 	}
 	public int insert(Member member) {
 		int result = 0;
+		Connection conn = getConnection();
+		PreparedStatement pstmt = null;
+		String sql = "insert into member1 values(?,?,?,sysdate)";
+		try {
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}finally {
+			try {
+				if(pstmt != null) pstmt.close();
+				if(conn != null) conn.close();
+			}catch(Exception e) {	}
+		}
 		return result;
 	}
 }
